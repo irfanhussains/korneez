@@ -1,0 +1,287 @@
+body{
+	background:#fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+a{
+	transition:all 0.5s;
+	color:#00325A;
+}
+a:hover, a:focus{
+	opacity:1;
+	transition:all 0.5s;
+	text-decoration:none;
+	color:#003259;
+}
+ul, li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+h1{
+	color:#00325A;
+	padding-bottom:10px;
+	font-size: 36px;
+	font-weight:300;
+	margin-top:0;
+	margin-bottom:40px;
+}
+h2{
+	color:#003259;
+	font-size: 56px;
+	font-weight:bold;
+}
+h3{
+	font-size:24px;
+	font-weight:normal;
+}
+p{
+	font-size:20px;
+}
+.container-fluid{
+	padding:0 4.6875rem
+}
+.btn-default {
+    color: #fff;
+    background-color: #003259;
+    border-radius:0;
+    font-size:14px;
+    font-weight: 300;
+    padding:10px 15px;
+}
+
+.btn-default:hover, .btn-default:focus {
+    color: #fff;
+	border-top: 3px solid #040933;
+    background-color: #040933;
+	opacity:1;
+}
+.top-bg{
+	background:url(../images/top_bar.png);
+	height:10px;
+	width:100%;
+}
+.navbar-brand{
+	height:auto;
+	margin-right:50px;
+}
+.navbar-nav{
+	float:left;
+	font-weight:300;
+	margin-top:7px;
+}
+.navbar-nav > li {
+    float: left;
+}
+.navbar-nav.secondary{
+	float:right;
+	margin-top:7px;
+}
+.navbar-nav li a{
+	text-align:center;
+}
+.navbar-nav li a .fa{
+	font-size: 20px;
+    margin-bottom: 5px;
+}
+.navbar-nav > li > a{
+	border-bottom:3px #fff solid;	
+}
+.nav > li > a:hover, .nav > li > a:focus{
+	border-bottom:3px #003259 solid;
+	background:none;
+}
+.carousel-fade .carousel-control .fa {
+    position: relative;
+    top: 45%;
+}
+.owl-carousel{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.owl-carousel .item{
+}
+.owl-nav{
+	position: absolute;
+    top: 45%;
+    width: 100%;
+}
+.owl-nav .fa{
+	color:#fff;
+	font-size:35px;
+}
+.owl1 .owl-nav .fa{
+	color:#980200;
+	font-size:35px;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+	float: right;
+    margin-right: -30px;
+}
+.owl-carousel .owl-nav button.owl-prev{
+	float: left;
+    margin-left: -30px;
+}
+.owl-dots{
+	display:none;
+}
+.products{
+	text-align:center;
+		padding:4.6875rem 0;	
+}
+.products .product-image{
+	overflow:hidden;
+	display:block;
+	position:relative;
+	text-align:center;
+	
+}
+.products span{
+	text-align:center;
+	display:block;
+	font-size:24px;
+	color:#003259;
+	padding:20px 0;
+}
+.products .product-image.butter{
+	background:#FF9742;
+}
+.products .product-image.caramel{
+	background:#95CFE5;
+}
+.products .product-image.toffee{
+		background:#F0A430;
+}
+.products .product-image.plain{
+		background:#FFCB43;
+}
+.products .product-image.champ{
+		background:#C2B528;
+}
+
+.products .product-image img{
+}
+.products .product-image img:hover {
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+.products .shop-box{
+	color:#fff;
+	background:#333333;
+	font-weight:300;
+	font-size:24px;
+	display:block;
+	padding:15px;
+}
+
+.ads{
+		padding:4.6875rem 0;	
+		border-top:1px #00325A solid;
+}
+.animated{
+		padding:4.6875rem 0;	
+}
+.animated p{
+	color:#00325A;
+	font-size:36px;
+}
+footer{
+	background:#003259;
+	color:#fff;
+	padding:4.6875rem 0;
+}
+footer h3{
+	color:#fff;
+	font-weight:300;
+	font-size:32px;
+}
+footer .owl-carousel .item{
+	font-size:16px;
+}
+.social{
+	display:inline;
+}
+.social .fab{
+	margin-left:20px;
+	font-size:24px;
+}
+footer ul{
+	font-size:18px;
+	float:left;
+	margin-left:40px;
+}
+footer .footer-links{
+		border-top:1px #fff solid;
+		padding:20px;
+}
+footer .bd{
+	border-left:1px #fff solid;
+}
+footer a{
+	color:#fff;
+}
+.footer-bottom{
+	font-size:12px;
+	color:#fff;
+	padding:25px 0;
+	background:#333333;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@media (max-width: 767px){
+	.container-fluid {
+		padding: 0 1.6875rem;
+	}
+	.owl-nav {
+    top: 28%;
+	}
+	.products {
+		padding: 4.6875rem 2.6875rem;
+	}
+	.navbar-brand {
+		float: none !important;
+	}
+	.navbar-nav {
+		margin: 7.5px 2px;
+	}
+	.navbar-brand {
+		height: auto;
+		margin-right: 50px;
+		float: none !important;
+		text-align: center;
+		margin: 0 !important;
+	}
+	.navbar-brand > img {
+		margin: 0 auto;
+	}
+	footer ul {
+		font-size: 18px;
+		float: none;
+		margin-left: 0;
+	}
+	.social{
+		display:block;
+	}
+	footer .bd{
+		border:none;
+	}
+	.animated img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}

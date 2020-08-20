@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Korneez PopCorn</title>
+<title>Korneez</title>
 <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 <!-- Bootstrap -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 <link rel="stylesheet" href="assets/css/owl.carousel.css">
 <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
 </head>
@@ -20,11 +21,31 @@
 <header>
   <div class="container-fluid">
     <div class="row"> <a href="index.html" class="navbar-brand pull-left"><img src="assets/images/logo.png" class="img-responsive"></a>
-      <nav class="navbar-collapse" role="navigation">
+    	 <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="fas fa-bars"></span> </button>
+      <nav class="navbar-collapse collapse" role="navigation">
         <ul class="navbar-nav nav">
-          <li><a href="shop.html"><i class="fa fa-store"></i><br>
-
-          SHOP KORNEEZ</a></li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-store"></i><br>
+            SHOP KORNEEZ <i class='fa fa-angle-down'></i></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">POPCORNS <i class='fa fa-angle-right'></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="plain.html">PLAIN SALTED</a></li>
+                      <li><a href="caramel.html">CARAMEL PEANUT</a></li>
+                      <li><a href="butter.html">BUTTERSCOTCH</a></li>
+                      <li><a href="toffee.html">TOFFEE</a></li>              
+                      <li><a href="champ.html">CHAMPS MIX</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+            
+            
+          </li>
+          <li><a href="cares.html"> <i class="fa fa-hand-holding-heart"></i><br>
+            KORNEEZ CARES </a></li>
+          <li><a href="about.html"> <i class="fa fa-korneez"></i><br>
+            ABOUT </a></li>
         </ul>
         <ul class="navbar-nav nav secondary">
           <li><a href="search.html"> <i class="fa fa-search"></i><br>
@@ -37,99 +58,112 @@
   </div>
 </header>
 <section class="banner">
-  <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3500">
-    <div class="carousel-inner" role="listbox">
+
+    <div class="owlbanner owl-carousel owl-theme">
       <div class="item active"> <a href="shop.html"> <img src="assets/images/banner1.png" alt=""> </a> </div>
       <div class="item"> <a href="shop.html"> <img src="assets/images/banner2.png" alt=""> </a> </div>
       <div class="item"> <a href="shop.html"> <img src="assets/images/banner3.png" alt=""> </a> </div>
+	  <div class="item"> <a href="shop.html"> <img src="assets/images/banner4.png" alt=""> </a> </div>
+      <div class="item"> <a href="shop.html"> <img src="assets/images/banner5.png" alt=""> </a> </div>
     </div>
-    <div class="control-icon"> <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="fa fa-prev"><i class="fa fa-chevron-left"></i></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="fa fa-next"><i class="fa fa-chevron-right"></i></span> </a> </div>
-  </div>
+    
+
 </section>
 <section class="products">
-    <h1>OUR HANDCRAFTED POPCORN</h1>
-      <div class="container-fluid">
-         <div class="owl1 owl-carousel owl-theme">
-          <div class="item">
-          	<div class="product-image butter"><img src="assets/images/butterscotch.png" class="img-responsive"></div> <span>BUTTERSCOTCH</span> <a href="products.html" class="shop-box">SHOP NOW</a></div>
-          <div class="item">
-         	 <div class="product-image caramel"><img src="assets/images/caramel_peanut.png" class="img-responsive"></div> <span>CARAMEL PEANUT</span> <a href="products.html" class="shop-box">SHOP NOW</a></div>
-          <div class="item">
-          	<div class="product-image champ"><img src="assets/images/champ.png" class="img-responsive"></div> <span>CHAMP MIX</span><a href="products.html" class="shop-box"> SHOP NOW </a></div>
-          <div class="item">
-          	<div class="product-image plain"><img src="assets/images/plain_salted.png" class="img-responsive"></div> <span>PLAIN SALTED</span> <a href="products.html" class="shop-box">SHOP NOW</a></div>
-          <div class="item">
-          	<div class="product-image toffee"><img src="assets/images/toffee.png" class="img-responsive"></div> <span>TOFFEE</span> <a href="products.html" class="shop-box">SHOP NOW</a></div>
-      </div>
+  <h1>OUR HANDCRAFTED POPCORN</h1>
+  <div class="container-fluid">
+    <div class="owl1 owl-carousel owl-theme">
+      <div class="item">
+        <div class="product-image butter"><img src="assets/images/butterscotch.png" class="img-responsive"></div>
+        <span>BUTTERSCOTCH</span> <a href="butter.html" class="shop-box">SHOP NOW</a></div>
+      <div class="item">
+        <div class="product-image caramel"><img src="assets/images/caramel_peanut.png" class="img-responsive"></div>
+        <span>CARAMEL PEANUT</span> <a href="caramel.html" class="shop-box">SHOP NOW</a></div>
+      <div class="item">
+        <div class="product-image champ"><img src="assets/images/champ.png" class="img-responsive"></div>
+        <span>CHAMPS MIX</span><a href="champ.html" class="shop-box"> SHOP NOW </a></div>
+      <div class="item">
+        <div class="product-image plain"><img src="assets/images/plain_salted.png" class="img-responsive"></div>
+        <span>PLAIN SALTED</span> <a href="plain.html" class="shop-box">SHOP NOW</a></div>
+      <div class="item">
+        <div class="product-image toffee"><img src="assets/images/toffee.png" class="img-responsive"></div>
+        <span>TOFFEE</span> <a href="toffee.html" class="shop-box">SHOP NOW</a></div>
+    </div>
   </div>
 </section>
 <section class="ads">
-	<div class="container-fluid">
-    	<div class="col-md-5">
-        	<img src="assets/images/box_ad.png" class="img-responsive">
-        </div>
-        <div class="col-md-7">
-        	<img src="assets/images/video.png" class="img-responsive">
-        </div>
-    </div>
+  <div class="container-fluid">
+    <div class="col-md-6"> 
+    <div class="owlAds owl-carousel owl-theme">
+        <div class="item"><img src="assets/images/box_ad.png" class="img-responsive"></div>
+        <div class="item"><img src="assets/images/box_ad1.jpg" class="img-responsive"></div>        
+        <div class="item"><img src="assets/images/box_ad2.jpg" class="img-responsive"></div>
+        <div class="item"><img src="assets/images/box_ad3.jpg" class="img-responsive"></div>
+        <div class="item"><img src="assets/images/box_ad4.jpg" class="img-responsive"></div>
+      </div>
+    
+     </div>
+    <div class="col-md-6"> 
+    	 <h3>FOLLOW US:
+        <div class="social"><i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> <i class="fab fa-youtube"></i></div>
+      </h3>
+      <h2>Latest Video</h2>
+    	<img src="assets/images/video.png" class="img-responsive">
+    	
+     </div>
+  </div>
 </section>
 <section class="animated">
-	<div class="container-fluid">
-    	<div class="col-md-5 text-right"><img src="assets/images/animated.gif"></div>
-        <div class="col-md-6 text-center">
-        	<h2>BEST POPCORNS IN TOWN</h2>
-            <p>Day by day popping into every pakistani’s heart. Our handcrafted popcorn are made fresh daily.
-Make your gifts extra special with Korneez Popcorn.</p>
-        </div>
-                <div class="col-md-1 text-center">
-                </div>
+  <div class="container-fluid">
+    <div class="col-sm-6 text-right"><img src="assets/images/animated.gif"></div>
+    <div class="col-sm-6 text-center">
+      <h2>PROUDLY MADE IN PAKISTAN</h2>
+      <p>Our products are lovingly made daily and shipped to over 55 cities in Pakistan. Be it the salted or coated popcorn, we promise you a fresh, delicious and healthy snacking.</p>
     </div>
+    <div class="col-md-1 text-center"> </div>
+  </div>
 </section>
 <div class="top-bg"></div>
 <footer>
-
   <div class="container-fluid">
-    	<div class="col-md-6">
-        	<h3>WHAT OUR CUSTOMERS ARE SAYING</h3>
-            <div class="owlNews owl-carousel owl-theme">
+    <div class="col-md-6">
+      <h3>WHAT OUR CUSTOMERS ARE SAYING</h3>
+      <div class="owlNews owl-carousel owl-theme">
         <div class="item">Peshawar Zalmi’s fast-bowler Wahab Riaz got into a heated altercations with Quetta Gladiators captain Sarfaraz Ahmed and opening batsman Jason Roy during their match at the National Stadium in Karachi on Saturday.<br>
-        <strong>Kahan hein mere Popcorn</strong>
-		</div>
+          <strong>Kahan hein mere Popcorn</strong> </div>
         <div class="item">Riaz blew a kiss to Roy at the end of the Quetta Gladiators innings. Sarfaraz came forward in the defence of his teammate. Riaz then proceeded towards the Quetta Gladiators skipper with intent after the latter advanced towards him.<br>
-                        <strong>Kahan hein mere Popcorn</strong>
- </div>
+          <strong>Kahan hein mere Popcorn</strong> </div>
         <div class="item">There was another altercation between Roy and Riaz earlier in the match as well. Peshawar Zalmi won the match in a dominant manner by six wickets on the back of a scintillating hundred from wicketkeeper-batsman Kamran Akmal.<br>
-                <strong>Kahan hein mere Popcorn</strong>
- </div>
+          <strong>Kahan hein mere Popcorn</strong> </div>
       </div>
-        </div>
-        <div class="col-md-6">
-        	<h3>FOLLOW US: <div class="social"><i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> <i class="fab fa-youtube"></i></div></h3>
-            <div class="footer-links">
-            	<div class="row">
-            	<div class="col-md-6">
-            	<ul>
-                	<li><a href="#">About Us</a></li>
-                	<li><a href="#">Contact Us</a></li>
-                	<li><a href="#">Korneez Cares</a></li>
-                </ul>
-                </div>
-                <div class="col-md-6 bd">
-                <ul>
-                	<li><a href="#">Products</a></li>
-                	<li><a href="#">Order Status</a></li>
-                	<li><a href="#">Press & Media</a></li>
-                </ul>
-                </div>
-                </div>
-            </div>
-        </div>
     </div>
+    <div class="col-md-6">
+      <h3>FOLLOW US:
+        <div class="social"><i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> <i class="fab fa-youtube"></i></div>
+      </h3>
+      <div class="footer-links">
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Korneez Cares</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 bd">
+            <ul>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Press & Media</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 <div class="footer-bottom">
-	<div class="container-fluid">
-    	2020 © Copyright. korneez.com. all rights reserved
-    </div>
+  <div class="container-fluid"> 2020 © Copyright. korneez.com. all rights reserved </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
@@ -137,10 +171,35 @@ Make your gifts extra special with Korneez Popcorn.</p>
 <script src="assets/js/bootstrap.min.js"></script> 
 <script src="assets/js/owl.carousel.min.js"></script> 
 <script type="text/javascript">
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
 $('.carousel').carousel({
     pause: "false"
 });
 $('.owl1').owlCarousel({
+    loop:true,
+    margin:10,
+	autoplay:false,
+    responsiveClass:true,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+$('.owlbanner').owlCarousel({
     loop:true,
     margin:10,
 	autoplay:false,
@@ -152,10 +211,28 @@ $('.owl1').owlCarousel({
             items:1
         },
         600:{
-            items:2
+            items:1
         },
         1000:{
-            items:5
+            items:1
+        }
+    }
+});
+$('.owlAds').owlCarousel({
+    loop:true,
+    margin:10,
+	autoplay:true,
+    responsiveClass:true,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
         }
     }
 });

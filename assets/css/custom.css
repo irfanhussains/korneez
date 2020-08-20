@@ -236,6 +236,12 @@ p{
 .animated{
 		padding:4.6875rem 0;	
 }
+.animated .thumbborder{
+	border: 1px #000 solid;
+    position: relative;
+    margin-top: -8px;
+	width:60px;
+}
 .animated p{
 	color:#00325A;
 	font-size:36px;
@@ -308,6 +314,12 @@ footer a{
 	.animated p {
 		font-size: 24px;
 	}
+	.animated .thumbborder {
+
+
+		width: 40px;
+		display: inline;
+	}
 }
 @media (max-width: 767px){
 	.container-fluid {
@@ -341,6 +353,7 @@ footer a{
 		max-width: 100%;
 		height: auto;
 	}
+	
 	.navbar-collapse{
 		width:100%;
 	}

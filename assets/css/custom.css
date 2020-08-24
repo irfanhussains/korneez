@@ -14,7 +14,7 @@ a:hover, a:focus{
 	opacity:1;
 	transition:all 0.5s;
 	text-decoration:none;
-	color:#003259;
+	color:#fff;
 }
 ul, li{
 	margin:0;
@@ -30,9 +30,25 @@ h1{
 	margin-bottom:40px;
 }
 h2{
-	color:#003259;
+	color:#00325A;
 	font-size: 56px;
 	font-weight:bold;
+}
+.primary-button{
+	background: #00325A;
+	border:1px #00325A solid;
+    font-weight: 300;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+	float:right;
+	margin-top:15px;
+}
+.primary-button:hover{
+	background: #fff;
+	border:1px #00325A solid;
+	color:#00325A;
 }
 h3{
 	font-size:24px;
@@ -76,6 +92,11 @@ p{
 .navbar-nav > li {
     float: left;
 }
+.navbar-nav > li.active a{
+		border-bottom:3px #003259 solid;
+	background:none;
+
+}
 .navbar-nav.secondary{
 	float:right;
 	margin-top:7px;
@@ -113,12 +134,16 @@ p{
 .nav > li > a:hover, .nav > li > a:focus{
 	border-bottom:3px #003259 solid;
 	background:none;
+	color:#003259;
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
 	background:transparent;
 }
 .dropdown-menu > li > a{
 	text-align:left;
+}
+.navbar-nav > li.active .dropdown-menu > li > a{
+	border-bottom:1px;
 }
 .dropdown-submenu {
   position: relative;
@@ -174,6 +199,18 @@ p{
 	text-align:center;
 		padding:4.6875rem 0;	
 }
+.products h2{
+	color:#00325A;
+	padding-bottom:0;
+	font-size: 36px;
+	font-weight:300;
+	margin-top:20;
+	margin-bottom:20px;
+}
+.contact{
+	text-align:left;
+}
+
 .products .product-image{
 	overflow:hidden;
 	display:block;
@@ -216,6 +253,9 @@ p{
     display: block;
     padding: 5px;
     border: 1px #00325A solid;
+}
+.products .shop-box:hover{
+	color:#003259
 }
 
 .ads{
@@ -303,6 +343,43 @@ footer a{
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+.product_info{
+	text-align:left;
+}
+.product_info h1{
+	margin:20px 0 10px 0;
+}
+.product_info ul{
+	font-size:20px;
+}
+table{
+	border-left:1px #e1e1e1 solid;
+	border-top:1px #e1e1e1 solid;	
+	font-size:16px;
+}
+table td{
+	border-right:1px #e1e1e1 solid;
+	border-bottom:1px #e1e1e1 solid;
+	padding:5px;
+}
+.font20{
+	font-size:20px;
+	font-weight:300;
+	background:#eee;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 @media (max-width: 768px){
 	.navbar-brand {

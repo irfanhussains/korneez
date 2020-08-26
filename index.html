@@ -87,20 +87,21 @@
 <section class="ads">
   <div class="container-fluid">
     <div class="col-md-6">
-      <div class="owlAds owl-carousel owl-theme">
-        <div class="item"><img src="assets/images/box_ad.png" class="img-responsive"></div>
-        <div class="item"><img src="assets/images/box_ad1.jpg" class="img-responsive"></div>
-        <div class="item"><img src="assets/images/box_ad2.jpg" class="img-responsive"></div>
-        <div class="item"><img src="assets/images/box_ad3.jpg" class="img-responsive"></div>
-        <div class="item"><img src="assets/images/box_ad4.jpg" class="img-responsive"></div>
-      </div>
+      <img src="assets/images/main_ad.jpg" class="img-responsive">
     </div>
     <div class="col-md-6">
       <h3>FOLLOW US:
-        <div class="social"><i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> <i class="fab fa-youtube"></i></div>
+        <div class="social"><a href="https://www.facebook.com/korneez/" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/korneezpopcorn" target="_blank"> <i class="fab fa-instagram"></i></a>  </div>
       </h3>
-      <h2>Latest Video</h2>
-      <img src="assets/images/video.png" class="img-responsive"> </div>
+      <h2>How We Do It</h2>
+      <video width="400" class="video_container" poster="assets/images/video.png" controls>
+          <source src="assets/images/video.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        
+        <div class="free"><img src="assets/images/free_home.jpg" class="img-responsive"></div>
+    
+       </div>
   </div>
 </section>
 <section class="animated">
@@ -199,23 +200,31 @@
     </div>
     <div class="col-md-6">
       <h3>FOLLOW US:
-        <div class="social"><i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> <i class="fab fa-youtube"></i></div>
+        <div class="social"><a href="https://www.facebook.com/korneez/" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/korneezpopcorn" target="_blank"> <i class="fab fa-instagram"></i></a>  </div>
       </h3>
       <div class="footer-links">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <ul>
               <li><a href="about.html">About Us</a></li>
               <li><a href="contact.html">Contact Us</a></li>
               <li><a href="cares.html">Korneez Cares</a></li>
             </ul>
           </div>
-          <div class="col-md-6 bd">
+          <div class="col-md-4 bd">
             <ul>
               <li><a href="addtoCart.html">Products</a></li>
               <li><a href="order.html">Order Status</a></li>
               <li><a href="news.html">Press & Media</a></li>
             </ul>
+          </div>
+          <div class="col-md-4">
+          <div class="pull-left">
+          	<img src="assets/images/iso.png" width="70" class="img-responsive">
+          </div>
+          <div class="pull-left">
+            <img src="assets/images/haccp.gif" width="70" class="img-responsive">
+           </div>
           </div>
         </div>
       </div>
@@ -223,14 +232,35 @@
   </div>
 </footer>
 <div class="footer-bottom">
-  <div class="container-fluid"> 2020 © Copyright. korneez.com. all rights reserved </div>
+  <div class="container-fluid"> 
+  	<div class="col-md-6">2020 © Copyright. Korneez.com. All Rights Reserved</div>
+ 	<div class="col-md-6 text-right">Web Design: <a href="https://www.behance.net/irfanhussains" target="_blank">UI Creatives</a></div>    
+  </div>
 </div>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+		<i class="fa fa-times" data-dismiss="modal"></i>
+      <div class="modal-body">
+        <img src="assets/images/main_ad.jpg" class="img-responsive">
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="assets/js/bootstrap.min.js"></script> 
 <script src="assets/js/owl.carousel.min.js"></script> 
 <script type="text/javascript">
+$(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
 $(document).ready(function(){
   $('.dropdown-submenu a.test').on("click", function(e){
     $(this).next('ul').toggle();
@@ -242,11 +272,13 @@ $('.carousel').carousel({
     pause: "false"
 });
 $('.owl1').owlCarousel({
-    loop:true,
+    loop:false,
     margin:10,
 	autoplay:false,
     responsiveClass:true,
-    nav:false,
+       nav:true,
+		navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+
     responsive:{
         0:{
             items:1
@@ -284,7 +316,8 @@ $('.owlAds').owlCarousel({
     margin:10,
 	autoplay:true,
     responsiveClass:true,
-    nav:false,
+    nav:true,
+		navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
     responsive:{
         0:{
             items:1

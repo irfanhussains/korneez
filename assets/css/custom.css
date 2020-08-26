@@ -179,10 +179,7 @@ p{
 	font-size:35px;
 	text-shadow:1px 1px 1px #000;
 }
-.owl1 .owl-nav .fa{
-	color:#980200;
-	font-size:35px;
-}
+
 
 .owl-carousel .owl-nav button.owl-next{
 	float: right;
@@ -302,6 +299,9 @@ footer .owl-carousel .item{
 .social{
 	display:inline;
 }
+.social a{
+	color:#fff;
+}
 .social .fab{
 	margin-left:20px;
 	font-size:24px;
@@ -309,7 +309,6 @@ footer .owl-carousel .item{
 footer ul{
 	font-size:18px;
 	float:left;
-	margin-left:40px;
 }
 footer .footer-links{
 		border-top:1px #fff solid;
@@ -317,6 +316,7 @@ footer .footer-links{
 }
 footer .bd{
 	border-left:1px #fff solid;
+	border-right:1px #fff solid;
 }
 footer a{
 	color:#fff;
@@ -326,6 +326,12 @@ footer a{
 	color:#fff;
 	padding:25px 0;
 	background:#333333;
+}
+.footer-bottom a{
+		color:#fff;
+}
+.video_container{
+	width:100%;
 }
 @keyframes shake {
   10%, 90% {
@@ -381,6 +387,29 @@ table td{
     width:100%;
     position:absolute;
 }
+.modal-dialog {
+	margin:70px auto;
+ 
+}
+.modal-content{
+	border-radius:0;
+	
+}
+.modal-body {
+    position: relative;
+    padding: 5px;
+}
+.modal .fa{
+	font-size: 24px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: -30px;
+	cursor:pointer;
+}
+.free{
+	margin-top:31px;
+}
 @media (max-width: 768px){
 	.navbar-brand {
 		margin-right: 0px;
@@ -397,13 +426,26 @@ table td{
 		width: 40px;
 		display: inline;
 	}
+	.product_info p{
+		margin-top:15px;
+		font-size:24px;
+	}
+	.ads h3, .free {
+		margin-top: 15px;
+	}
+	.owl-nav {
+		top: 35%;
+	}
+	.owl1 .owl-nav {
+		top: 32%;
+	}
 }
 @media (max-width: 767px){
 	.container-fluid {
     padding: 0 1.6875rem;
 }
 	.owl-nav {
-    top: 28%;
+    top: 32%;
 	}
 	
 	.navbar-nav {
